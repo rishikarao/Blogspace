@@ -1,5 +1,8 @@
 import os
 class Config:
+
+	STATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')
+	STATIC_URL='/static/'
 	SECRET_KEY = '5791628bb0b13ce0c676dfde280ba245'
 	SQLALCHEMY_DATABASE_URI = 'sqlite:///site.db'
 	MAIL_SERVER='smtp.googlemail.com'
